@@ -1,0 +1,86 @@
+body {
+    /* Warna latar belakang coklat hangat vintage */
+    background-color: #d7ccc8; /* Coklat krem sangat muda (latar) */
+    color: #4e342e;            /* Warna teks coklat gelap agar kontras */
+    
+    /* Menggunakan font bergaya klasik/serif agar kesan vintage terasa */
+    font-family: 'Georgia', serif;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background-color: #efe5fd; /* Warna kertas lama */
+    background: #bcaaa4;       /* Coklat medium */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+    border: 1px solid #8d6e63;
+}
+
+body {
+    background-color: #d7ccc8; /* Coklat krem muda */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Kotak lampu lalu lintas */
+.traffic-light {
+    width: 100px;
+    height: 280px;
+    background-color: #3e2723; /* Coklat sangat tua (vintage dark) */
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 8px 8px 0px #8d6e63;
+}
+
+/* Bentuk umum lingkaran lampu */
+.light {
+    width: 70px;
+    height: 70px;
+    background-color: #555; /* Warna mati (abu-abu) */
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+/* Warna saat lampu menyala (menggunakan opacity rendah saat mati) */
+.light.red.active {
+    background-color: #ff3b30;
+    box-shadow: 0 0 20px #ff3b30;
+}
+
+.light.yellow.active {
+    background-color: #ffcc00;
+    box-shadow: 0 0 20px #ffcc00;
+}
+
+.light.green.active {
+    background-color: #4cd964;
+    box-shadow: 0 0 20px #4cd964;
+}
+
+/* Warna dasar (mati) */
+.light {
+    width: 70px;
+    height: 70px;
+    background-color: #444; /* Abu-abu gelap */
+    border-radius: 50%;
+    margin: 10px;
+}
+
+/* Warna saat aktif (nyala) */
+.red.active { background-color: red; box-shadow: 0 0 20px red; }
+.yellow.active { background-color: yellow; box-shadow: 0 0 20px yellow; }
+.green.active { background-color: green; box-shadow: 0 0 20px green; }
